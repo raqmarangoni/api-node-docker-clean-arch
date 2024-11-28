@@ -10,10 +10,8 @@ app.get('/cep/:cep', (req, res) => {
 })
 
 app.post('/calculate', (req, res) => {
-    console.log(req.body)
     const { x, y } = req.body
     const result = Math.round(x / y)
-    console.log(result)
     res.json(result)
 })
 
