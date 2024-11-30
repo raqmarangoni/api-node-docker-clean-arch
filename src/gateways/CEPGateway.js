@@ -1,10 +1,10 @@
-const axios = require('axios')
+const axios = require("axios");
 
 class CEPGateway {
-    async get(cep){
-       const { data } = await axios.get(`https://viacep.com.br/ws/${cep}/json/`)
-        return data
-    }
+  async get(cep) {
+    const { data } = await axios.get(`https://viacep.com.br/ws/${cep}/json/`);
+    return data;
+  }
 }
 
-module.exports = new CEPGateway()
+module.exports = new CEPGateway();
