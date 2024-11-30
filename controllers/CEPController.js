@@ -1,4 +1,4 @@
-const cepGateway = require('./CEPGateway')
+const cepGateway = require('../CEPGateway')
 
 class CEPController {
     async get(req, res) {
