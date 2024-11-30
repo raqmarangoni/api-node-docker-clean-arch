@@ -22,6 +22,10 @@ module.exports = {
     {
       name: 'CEP',
       description: 'Search zip code'
+    },
+    {
+      name: 'Calculator',
+      description: 'Search zip code'
     }
   ],
   paths,

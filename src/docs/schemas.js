@@ -1,5 +1,7 @@
-const cep = require('./schemas/cepSchemas')
+const cep = require('./schemas/cepSchema')
+const calculator = require('./schemas/calculatorSchema')
 
 module.exports = {
-  cep
+  cep,
+  calculator
 }
