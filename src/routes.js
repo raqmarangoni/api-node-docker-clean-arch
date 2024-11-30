@@ -4,6 +4,6 @@ const cepController = require('./controllers/CEPController')
 const calculatorController = require('./controllers/CalculatorController')
 
 router.get('/cep/:cep', cepController.get)
-router.post('/calculate', calculatorController.post)
+router.post('/calculator', calculatorController.post)
 
 module.exports = router
