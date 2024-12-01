@@ -87,25 +87,11 @@ Acesse a documentação da API em `http://localhost:3000/documentation`.
 }
 ```
 
-## Testes
-
-Execute os testes unitários com:
-
-```bash
-npm test
-```
-
-## Qualidade do Código
-
 ### Prettier e ESLint
 
 ```bash
 npm run lint:fix
 ```
-
-### Husky e Lint-staged
-
-## Pipeline CI
 
 ## Autora
 
