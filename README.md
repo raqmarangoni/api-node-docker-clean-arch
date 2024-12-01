@@ -14,11 +14,8 @@ A API foi projetada para ser executada em um contêiner Docker e inclui document
 - Consulta de endereço pelo número do CEP;
 - Cálculo de divisão com arredondamento para o número inteiro mais próximo;
 - Documentação Swagger;
-- Execução com Docker;
-- Testes unitários;
+- Execução com Docker compose;
 - Formatação do código com Prettier e ESLint;
-- Verificações pré-commit com Husky e lint-staged;
-- Pipeline CI;
 
 ## Iniciar projeto
 
@@ -40,16 +37,13 @@ npm add -D eslint-config-prettier
 npm swagger-ui-express
 ```
 
-### Excutar com Docker
+### Excutar com Docker compose
 
-Construa e execute o contêiner Docker:
+Definição do serviço no arquivo docker-compose:
 
 ```bash
-docker build -t raqmarangoni/api-node:1.0 .
-docker run -d -p 3000:3000 raqmarangoni/api-node:1.0
+docker-compose up --build
 ```
-
-A API estará disponível em `http://localhost:3000`.
 
 ### Documentação Swagger
 
