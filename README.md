@@ -25,18 +25,6 @@ A API foi projetada para ser executada em um contêiner Docker e inclui document
 npm install
 ```
 
-```bash
-npx eslint --init
-```
-
-```bash
-npm add -D eslint-config-prettier
-```
-
-```bash
-npm swagger-ui-express
-```
-
 ### Excutar com Docker compose
 
 Definição do serviço no arquivo docker-compose:
@@ -64,28 +52,8 @@ Acesse a documentação da API em `http://localhost:3000/documentation`.
 **POST** `/calculator`
 
 - **Descrição**: Divide dois números (x e y) e retorna o resultado arredondado para o inteiro mais próximo.
-- **Corpo da Requisição**:
-
-```json
-{
-  "x": 10,
-  "y": 3
-}
-```
-
-- **Resposta**: JSON contendo o resultado arredondado:
-
-```json
-{
-  "result": 3
-}
-```
-
-### Prettier e ESLint
-
-```bash
-npm run lint:fix
-```
+- **Corpo da Requisição**: Enviar body no formato JSON contendo x e y
+- **Resposta**: Resultado da divisão
 
 ## Autora
 
